@@ -8,11 +8,11 @@ spring:
         - id: movieRoute
           uri: lb://movie-service
           predicates:
-            - Path=/api/movies/**
+            - Path=/movies/**
         - id: catalogRoute
           uri: lb://catalog-service
           predicates:
-            - Path=/api/catalog/**
+            - Path=/catalog/**
 
 info:
   app:
